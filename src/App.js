@@ -1,5 +1,5 @@
-import React, { useState } from 'react'; // Combining both imports
-import Child from './Components/Child'; // Ensure the path is correct
+import React, { useState } from 'react'; 
+import Child from './Components/Child'; 
 
 function App() {
   const [user, setUser] = useState({
@@ -8,12 +8,12 @@ function App() {
   });
 
   const sendData = (user) => {
-    setUser(user); // Set the user data received from the child component
+    setUser(user); 
   };
 
   return (
     <div className="App">
-      <Child sendData={sendData} /> {/* Pass the sendData function to the child */}
+      <Child sendData={sendData} /> 
       <div>
         <strong>{user.name}</strong>
         <hr />

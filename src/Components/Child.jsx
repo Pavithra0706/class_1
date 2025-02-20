@@ -7,7 +7,7 @@ const Child = (props) => {
   };
 
   const onClickevent = () => {
-    props.sendData(user); // Send the user data back to the parent (App)
+    props.sendData(user); 
   };
 
   return (
